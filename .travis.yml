@@ -1,0 +1,17 @@
+os:
+  - linux
+
+dist: xenial
+
+language: python
+script:
+  - python -m pytest -v
+
+deploy:
+  provider: heroku
+  api_key: $HEROKU_API_KEY
+  app: kahramon
+  on:
+    repo: HADJIBAEV/Portfolio-2021
+    branch: master
+    strategy: git
