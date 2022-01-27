@@ -10,8 +10,8 @@ script:
 deploy:
   provider: heroku
   api_key: $HEROKU_API_KEY
-  app: kahramon
+  app: hadjibaevapp
   on:
-    repo: HADJIBAEV/Portfolio-2021
+    repo: HADJIBAEV/Dexp
     branch: master
     strategy: git
